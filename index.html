@@ -3,11 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Andrii Tieroshkin Resume</title>
-    <link rel="stylesheet" href="/css/materialize.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
+    <nav>
+      <div class="nav-wrapper purple">
+        <div class="container">
+          <a href="#!" class="brand-logo">Resume</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#profile"><i class="material-icons left">person</i>Profile</a></li>
+            <li><a href="#technology"><i class="material-icons left">assignment</i>Technology</a></li>
+            <li><a href="#education"><i class="material-icons left">school</i>Education</a></li>
+            <li><a href="#connect"><i class="material-icons left">share</i>Connect</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#profile"><i class="material-icons left">person</i>Profile</a></li>
+      <li><a href="#technology"><i class="material-icons left">assignment</i>Technology</a></li>
+      <li><a href="#education"><i class="material-icons left">school</i>Education</a></li>
+      <li><a href="#connect"><i class="material-icons left">share</i>Connect</a></li>
+    </ul>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const elems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(elems, {});
+      });
+    </script>
   </body>
 </html>
