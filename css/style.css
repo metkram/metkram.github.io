@@ -4,8 +4,12 @@
 }
 
 .profile-image {
-  width: 40vh;
-  height: 40vh;
+  width: 40vmin;
+  height: 40vmin;
   border: dashed #fff;
   border-radius: 50%;
+}
+
+.section-head {
+  height: 20vh;
 }
