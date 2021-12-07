@@ -31,6 +31,7 @@
     </ul>
     <div class="container">
       <div class="first-screen center-align">
+        <a id="top"></a>
         <h2>Andrii Tieroshkin</h2>
         <p>
           Trainee Frontend Developer
@@ -75,6 +76,7 @@
             </div>
           </div>
         </div>
+        <div class="section-bottom"></div>
       </div>
       <div class="technology">
         <a id="technology"></a>
@@ -83,7 +85,7 @@
           <h2 class="center-align">Technology</h2>
         </div>
         <ul class="collapsible">
-          <li>
+          <li class="active">
             <div class="collapsible-header">
               <i class="material-icons">library_books</i>
               Languages
@@ -115,15 +117,77 @@
             </div>
           </li>
         </ul>
+        <div class="section-bottom"></div>
+      </div>
+      <div class="education">
+        <a id="education"></a>
+        <hr /><br />
+        <div class="section-head">
+          <h2 class="center-align">Education</h2>
+        </div>
+        <div class="row">
+          <div class="col s3">
+            <img src="images/mkdgma.png" class="edu-image" alt="" />
+          </div>
+          <div class="col s9">
+            Kramatorsk Applied College of Industry, Information Technologies and Business of Donbass State Engineering Academy (former Engineering College of DSEA)<br />
+            Junior Specialist, Finance<br />
+            2005-2008
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s3">
+            <img src="images/dgma.png" class="edu-image" alt="" />
+          </div>
+          <div class="col s9">
+            Donbass State Engineering Academy<br />
+            Master's degree, Finance<br />
+            2008-2011
+          </div>
+        </div>
+        <div class="section-bottom"></div>
+      </div>
+      <div class="connect">
+        <a id="connect"></a>
+        <hr /><br />
+        <div class="section-head">
+          <h2 class="center-align">Contacts</h2>
+        </div>
+        <div class="row">
+          <div class="col s1 offset-s2">
+            <img src="images/gb.png" class="contact-image" alt="" />
+          </div>
+          <div class="col s9">
+            <a href="https://github.com/metkram" target="_blank" class="tooltipped contact-link" data-position="right" data-tooltip="https://github.com/metkram">@github</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s1 offset-s2">
+            <img src="images/ln.png" class="contact-image" alt="" />
+          </div>
+          <div class="col s9">
+            <a href="https://www.linkedin.com/in/andrii-tieroshkin-444504226/" target="_blank" class="tooltipped contact-link" data-position="right" data-tooltip="https://www.linkedin.com/in/andrii-tieroshkin-444504226/">@linkedin</a>
+          </div>
+        </div>
+        <div class="section-bottom"></div>
       </div>
     </div>
+    <footer class="page-footer purple">
+      <div class="container">
+        <div class="center-align">
+          no more, just footer. <a href="#top">go to the top</a>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const sideElems = document.querySelectorAll('.sidenav');
         const collapseElems = document.querySelectorAll('.collapsible');
+        const tooltippedElems = document.querySelectorAll('.tooltipped');
         M.Sidenav.init(sideElems, {});
         M.Collapsible.init(collapseElems, {});
+        M.Tooltip.init(tooltippedElems, {});
       });
     </script>
   </body>
