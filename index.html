@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Andrii Tieroshkin Resume</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mitr">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -30,16 +31,14 @@
       <li><a href="#connect"><i class="material-icons left">share</i>Connect</a></li>
     </ul>
     <div class="container">
-      <div class="first-screen center-align">
-        <a id="top"></a>
+      <div id="top" class="first-screen center-align scrollspy">
         <h2>Andrii Tieroshkin</h2>
         <p>
           Trainee Frontend Developer
         </p>
       </div>
-      <div class="profile">
-        <a id="profile"></a>
-        <hr /><br />
+      <div id="profile" class="profile scrollspy">
+        <hr />
         <div class="section-head">
           <h2 class="center-align">Profile</h2>
         </div>
@@ -48,45 +47,42 @@
             <div class="center-align">
               <img src="images/profile.jpg" alt="" class="profile-image" />
             </div>
-            <div class="collection">
-              <div class="row collection-item">
-                <div class="col s6 right-align">
-                  Name |
-                </div>
-                <div class="col s6">
-                  Andrii Tieroshkin
-                </div>
+            <div class="row">
+              <div class="col s6 right-align">
+                Name |
               </div>
-              <div class="row collection-item">
-                <div class="col s6 right-align">
-                  Age |
-                </div>
-                <div class="col s6">
-                  31
-                </div>
+              <div class="col s6">
+                Andrii Tieroshkin
               </div>
-              <div class="row collection-item">
-                <div class="col s6 right-align">
-                  Location |
-                </div>
-                <div class="col s6">
-                  Ukranine, Kramatorsk
-                </div>
+            </div>
+            <div class="row">
+              <div class="col s6 right-align">
+                Age |
+              </div>
+              <div class="col s6">
+                31
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s6 right-align">
+                Location |
+              </div>
+              <div class="col s6">
+                Ukraine, Kramatorsk
               </div>
             </div>
           </div>
         </div>
         <div class="section-bottom"></div>
       </div>
-      <div class="technology">
-        <a id="technology"></a>
-        <hr /><br />
+      <div id="technology" class="technology scrollspy">
+        <hr />
         <div class="section-head">
           <h2 class="center-align">Technology</h2>
         </div>
         <ul class="collapsible">
           <li class="active">
-            <div class="collapsible-header">
+            <div class="collapsible-header amber lighten-4">
               <i class="material-icons">library_books</i>
               Languages
               <span class="badge">3</span></div>
@@ -97,18 +93,17 @@
             </div>
           </li>
           <li>
-            <div class="collapsible-header">
+            <div class="collapsible-header amber lighten-4">
               <i class="material-icons">receipt</i>
               Frameworks
-              <span class="badge">3</span></div>
+              <span class="badge">2</span></div>
             <div class="collapsible-body">
               <p>React.js</p>
               <p>Materialize CSS</p>
-              <p>CSS</p>
             </div>
           </li>
           <li>
-            <div class="collapsible-header">
+            <div class="collapsible-header amber lighten-4">
               <i class="material-icons">title</i>
               Tools
               <span class="badge">1</span></div>
@@ -119,8 +114,7 @@
         </ul>
         <div class="section-bottom"></div>
       </div>
-      <div class="education">
-        <a id="education"></a>
+      <div id="education" class="education scrollspy">
         <hr /><br />
         <div class="section-head">
           <h2 class="center-align">Education</h2>
@@ -147,9 +141,8 @@
         </div>
         <div class="section-bottom"></div>
       </div>
-      <div class="connect">
-        <a id="connect"></a>
-        <hr /><br />
+      <div id="connect" class="connect scrollspy">
+        <hr />
         <div class="section-head">
           <h2 class="center-align">Contacts</h2>
         </div>
@@ -185,9 +178,11 @@
         const sideElems = document.querySelectorAll('.sidenav');
         const collapseElems = document.querySelectorAll('.collapsible');
         const tooltippedElems = document.querySelectorAll('.tooltipped');
+        const scrollspyElems = document.querySelectorAll('.scrollspy');
         M.Sidenav.init(sideElems, {});
         M.Collapsible.init(collapseElems, {});
         M.Tooltip.init(tooltippedElems, {});
+        M.ScrollSpy.init(scrollspyElems, {scrollOffset: 75});
       });
     </script>
   </body>
