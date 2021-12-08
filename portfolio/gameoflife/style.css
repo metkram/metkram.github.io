@@ -1,0 +1,32 @@
+body {
+  background-color: #fff;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+
+}
+
+#rules {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.cell-line {
+  width: 100vw;
+  height: 12px;
+}
+
+.empty-cell {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #808080;
+  float: left;
+  font-size: 0;
+}
+
+.alive-cell {
+  background-color: #000;
+}
