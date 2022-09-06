@@ -1,239 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Andrii Tieroshkin Resume</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mitr">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper purple">
-          <div class="container">
-            <h1 class="brand-logo">Resume</h1>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#profile"><i class="material-icons left">person</i>Profile</a></li>
-              <li><a href="#technology"><i class="material-icons left">assignment</i>Technology</a></li>
-              <li><a href="#education"><i class="material-icons left">school</i>Education</a></li>
-              <li><a href="#portfolio"><i class="material-icons left">folder_special</i>Portfolio</a></li>
-              <li><a href="#connect"><i class="material-icons left">share</i>Connect</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="#profile"><i class="material-icons left">person</i>Profile</a></li>
-      <li><a href="#technology"><i class="material-icons left">assignment</i>Technology</a></li>
-      <li><a href="#education"><i class="material-icons left">school</i>Education</a></li>
-      <li><a href="#portfolio"><i class="material-icons left">folder_special</i>Portfolio</a></li>
-      <li><a href="#connect"><i class="material-icons left">share</i>Connect</a></li>
-    </ul>
-    <div class="container">
-      <div id="top" class="first-screen center-align scrollspy">
-        <h2>Andrii Tieroshkin</h2>
-        <p>
-          Trainee Frontend Developer
-        </p>
+<html>
+<head>
+  <title>Andrii Tieroshkin Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="firstcol">
+      <h1>Andrii Tieroshkin</h1>
+      <label>trainee frontend developer</label>
+      <img src="images/profile.jpg" alt="AT" class="profile-pic">
+      <div class="technologies">
+        <img src="images/html.svg" />
+        <img src="images/css.svg" />
+        <img src="images/js.svg" />
+        <img src="images/react.svg" />
+        <img src="images/git.svg" />
       </div>
-      <div id="profile" class="profile scrollspy">
-        <hr />
-        <div class="section-head">
-          <h2 class="center-align">Profile</h2>
-        </div>
-        <div class="row">
-          <div class="col s6 offset-s3">
-            <div class="center-align">
-              <img src="images/profile.jpg" alt="" class="profile-image" />
-            </div>
-            <div class="row">
-              <div class="col s6 right-align">
-                Name |
-              </div>
-              <div class="col s6">
-                Andrii Tieroshkin
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s6 right-align">
-                Age |
-              </div>
-              <div class="col s6">
-                31
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s6 right-align">
-                Location |
-              </div>
-              <div class="col s6">
-                Ukraine, Kramatorsk
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section-bottom"></div>
+      <div class="about">
+        I'm looking for my first job as frontend web devepoler
       </div>
-      <div id="technology" class="technology scrollspy">
-        <hr />
-        <div class="section-head">
-          <h2 class="center-align">Technology</h2>
-        </div>
-        <ul class="collapsible">
-          <li class="active">
-            <div class="collapsible-header amber lighten-4">
-              <i class="material-icons">library_books</i>
-              Languages
-              <span class="badge">3</span></div>
-            <div class="collapsible-body">
-              <p>Javascript</p>
-              <p>HTML</p>
-              <p>CSS</p>
-            </div>
-          </li>
+    </header>
+    <main class="secondcol">
+      <h2>Portfolio</h2>
+      <div class="row">
+        <h3>React.js</h3>
+        <ul>
           <li>
-            <div class="collapsible-header amber lighten-4">
-              <i class="material-icons">receipt</i>
-              Frameworks
-              <span class="badge">2</span></div>
-            <div class="collapsible-body">
-              <p>React.js</p>
-              <p>Materialize CSS</p>
-            </div>
-          </li>
-          <li>
-            <div class="collapsible-header amber lighten-4">
-              <i class="material-icons">title</i>
-              Tools
-              <span class="badge">1</span></div>
-            <div class="collapsible-body">
-              <p>GIT</p>
-            </div>
-          </li>
-        </ul>
-        <div class="section-bottom"></div>
-      </div>
-      <div id="education" class="education scrollspy">
-        <hr /><br />
-        <div class="section-head">
-          <h2 class="center-align">Education</h2>
-        </div>
-        <div class="row">
-          <div class="col s3">
-            <img src="images/mkdgma.png" class="edu-image" alt="" />
-          </div>
-          <div class="col s9">
-            Kramatorsk Applied College of Industry, Information Technologies and Business of Donbass State Engineering Academy (former Engineering College of DSEA)<br />
-            Junior Specialist, Finance<br />
-            2005-2008
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s3">
-            <img src="images/dgma.png" class="edu-image" alt="" />
-          </div>
-          <div class="col s9">
-            Donbass State Engineering Academy<br />
-            Master's degree, Finance<br />
-            2008-2011
-          </div>
-        </div>
-        <div class="section-bottom"></div>
-      </div>
-      <div id="portfolio" class="portfolio scrollspy">
-        <hr />
-        <div class="section-head">
-          <h2 class="center-align">Portfolio</h2>
-        </div>
-        <ul class="collection with-header">
-          <li class="collection-header amber lighten-4"><h3>React.js</h3></li>
-          <li class="collection-item amber lighten-5">
-            <div>
-              <a href="portfolio/fifteenpuzzle/index.html" class="secondary-content"><i class="material-icons">link</i></a>
-              <h4>Fifteen Puzzle</h4>
+            <h4>Fifteen Puzzle <a href="portfolio/fifteenpuzzle/index.html">>></a></h4>
+            <p>
               This application has been developed with React.js library using hooks and ES6 syntax
-            </div>
+            </p>
           </li>
-          <li class="collection-item amber lighten-5">
-            <div>
-              <a href="portfolio/top100crypto/index.html" class="secondary-content"><i class="material-icons">link</i></a>
-              <h4>Top 100 Crypto</h4>
-              Fetching data from Coingecko and rendering with React.js library, using react redux, thunk and router
-            </div>
-          </li>
-          <li class="collection-header amber lighten-4">
-            <h3>Vanilla Javascript</h3>
-            <p>(early attempts to code with JS)</p>
-          </li>
-          <li class="collection-item amber lighten-5">
-            <div>
-              <a href="portfolio/tetris/index.html" class="secondary-content"><i class="material-icons">link</i></a>
-              <h4>Tetris</h4>
-            </div>
-          </li>
-          <li class="collection-item amber lighten-5">
-            <div>
-              <a href="portfolio/snake/index.html" class="secondary-content"><i class="material-icons">link</i></a>
-              <h4>Snake</h4>
-            </div>
-          </li>
-          <li class="collection-item amber lighten-5">
-            <div>
-              <a href="portfolio/gameoflife/index.html" class="secondary-content"><i class="material-icons">link</i></a>
-              <h4>Game of life</h4>
-              It works however requires some optimization (computational complexity is too high)
-            </div>
+          <li>
+            <h4>Top 100 Crypto <a href="portfolio/top100crypto/index.html"">>></a></h4>
+            <p>Fetching data from Coingecko and rendering with React.js library, using react redux, thunk and router</p>
           </li>
         </ul>
-        <div class="section-bottom"></div>
       </div>
-      <div id="connect" class="connect scrollspy">
-        <hr />
-        <div class="section-head">
-          <h2 class="center-align">Contacts</h2>
-        </div>
-        <div class="row">
-          <div class="col s1 offset-s2">
-            <img src="images/gb.png" class="contact-image" alt="" />
-          </div>
-          <div class="col s9">
-            <a href="https://github.com/metkram" target="_blank" class="tooltipped contact-link" data-position="right" data-tooltip="https://github.com/metkram">@github</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s1 offset-s2">
-            <img src="images/ln.png" class="contact-image" alt="" />
-          </div>
-          <div class="col s9">
-            <a href="https://www.linkedin.com/in/andrii-tieroshkin-444504226/" target="_blank" class="tooltipped contact-link" data-position="right" data-tooltip="https://www.linkedin.com/in/andrii-tieroshkin-444504226/">@linkedin</a>
-          </div>
-        </div>
-        <div class="section-bottom"></div>
+      <div class="row">
+        <h3>Vanilla JavaScript</h3>
+        <label>(early attempts to code)</label>
+        <ul>
+          <li>
+            <h4>Tetris <a href="portfolio/tetris/index.html">>></a></h4>
+          </li>
+          <li>
+            <h4>Snake <a href="portfolio/snake/index.html">>></a></h4>
+          </li>
+          <li>
+            <h4>Game of life <a href="portfolio/gameoflife/index.html">>></a></h4>
+            <p>It works however requires some optimization (computational complexity is too high)</p>
+          </li>
+        </ul>
       </div>
-    </div>
-    <footer class="page-footer purple">
-      <div class="container">
-        <div class="center-align">
-          no more, just a footer. <a href="#top">go to the top</a>
-        </div>
+      <h2>Education</h2>
+      <div class="row">
+        <ul>
+          <li>
+            <p>
+              Kramatorsk Applied College of Industry, 
+              Information Technologies and Business of 
+              Donbass State Engineering Academy 
+              (former Engineering College of DSEA) 
+              <a href="https://pitbddma.org.ua/" target="_blank">>></a><br />
+              Junior Specialist, Finance<br />
+              2005-2008
+            </p>
+          </li>
+          <li>
+            <p>
+              Donbass State Engineering Academy 
+              <a href="http://eng.dgma.donetsk.ua/" target="_blank">>></a><br />
+              Master's degree, Finance<br />
+              2008-2011
+            </p>
+          </li>
+        </ul>
       </div>
-    </footer>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const sideElems = document.querySelectorAll('.sidenav');
-        const collapseElems = document.querySelectorAll('.collapsible');
-        const tooltippedElems = document.querySelectorAll('.tooltipped');
-        const scrollspyElems = document.querySelectorAll('.scrollspy');
-        M.Sidenav.init(sideElems, {});
-        M.Collapsible.init(collapseElems, {});
-        M.Tooltip.init(tooltippedElems, {});
-        M.ScrollSpy.init(scrollspyElems, {scrollOffset: 75});
-      });
-    </script>
-  </body>
+      <h2>Contacts</h2>
+      <div class="row">
+        <ul>
+          <li class="flex">
+            <img src="images/ln.png" class="contact-image" />
+            <p>
+              <a href="https://www.linkedin.com/in/andrii-tieroshkin-444504226/" target="_blank">@linkedin</a>
+            </p>
+          </li>
+          <li class="flex">
+            <img src="images/gb.png" class="contact-image" />
+            <p>
+              <a href="https://github.com/metkram"" target="_blank">@github</a>
+            </p>
+          </li>
+          <li class="flex">
+            <img src="images/gmail.svg" class="contact-image" />
+            <p>
+              tieroshkin(at)gmail.com
+            </p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+</body>
 </html>

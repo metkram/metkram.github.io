@@ -1,0 +1,151 @@
+$text: #222831;
+$base-color: #00adB5;
+$secondary-color: #eee;
+
+* {
+  margin: 0;
+  color: $text;
+  font-family: 'Mukta', sans-serif;
+  font-size: 2vmax;
+}
+
+body {
+  background-color: $secondary-color;
+}
+
+h1 {
+  font-size: 5vmax;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 5vw 3vw;
+  font-size: 5vmax;
+  text-transform: uppercase;
+  border-bottom: 1px solid $text;
+}
+
+h3 {
+  font-size: 3vmax;
+}
+
+h4 {
+  font-size: 2vmax;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.firstcol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 41%;
+  min-height: 100vh;
+  background-color: $base-color;
+
+  label {
+    width: 100%;
+    font-size: 3vmax;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .profile-pic {
+    max-width: 20vw;
+    padding: 0.5vh;
+    border: 2px solid $secondary-color;
+    border-radius: 50%;
+  }
+
+  .about {
+    font-size: 2vmax;
+    text-align: center;
+    color: $secondary-color;
+  }
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  height: 150px;
+  img {
+    width: 18%;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      width: 25%;
+    }
+  }
+}
+
+.secondcol {
+  width: 59%;
+  min-height: 100vh;
+  background-color: $secondary-color;
+
+  .row {
+    width: 90%;
+    margin: 0 auto;
+
+    .contact-image {
+      max-width: 5vw;
+    }
+
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .contact-image {
+    width: 4vh;
+  }
+}
+
+@media (max-width: 1080px) {
+  .container {
+    flex-direction: column;
+
+    .firstcol {
+      width: 100%;
+      min-height: unset;
+    }
+
+    .secondcol {
+      width: 100%;
+      min-height: unset;
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  * {
+    font-size: 40px;
+  }
+
+  h1 {
+    font-size: 90px;
+  }
+  
+  h2 {
+    font-size: 90px;
+    margin: 0 10px;
+  }
+
+  .firstcol {
+    label {
+    font-size: 50px;
+    }
+  }
+
+}
